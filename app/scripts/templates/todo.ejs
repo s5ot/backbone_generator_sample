@@ -1,7 +1,8 @@
-<input type='checkbox' <% if (completed) { %>checked<% } %>>
-<form>
-    <input type='text' value='<%=title %>'>
-</form>
-<span>
-    <%= title %>
-</span>
+<label class=''>
+    <input type='checkbox' <% if (completed) { %>checked<% } %>>
+    <input type='text' value='<%=title %>' class='todo'>
+    <span class='title'>
+        <%= title %>
+    </span>
+</label>
+<span class="glyphicon glyphicon-remove-circle"></span>

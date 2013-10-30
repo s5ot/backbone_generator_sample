@@ -90,7 +90,6 @@ body {
     }
 }
 
-
 .hero-unit {
     margin: 50px auto 0 auto;
     width: 300px;
@@ -107,11 +106,13 @@ li form {
 }
 
 ul {
-    list-stype: none;
+    list-style: none;
 }
 
-li form {
-    display: none;
+.edit {
+    input[type=text] {
+        display: none;
+    }
 }
 
 .editing {
@@ -119,7 +120,7 @@ li form {
         display: none;
     }
 
-    form {
+    input[type=text] {
         display: inline-block;
     }
 }
