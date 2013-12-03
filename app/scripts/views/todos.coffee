@@ -26,6 +26,7 @@ class backboneGeneratorSample.Views.TodosView extends Backbone.View
 
         e.preventDefault()
         this.collection.create({'title': $('#new-todo').val()})
+        $('#new-todo').val('')
 
     addTodoItem: (todo)->
         todoView = new backboneGeneratorSample.Views.TodoView ({model: todo})
